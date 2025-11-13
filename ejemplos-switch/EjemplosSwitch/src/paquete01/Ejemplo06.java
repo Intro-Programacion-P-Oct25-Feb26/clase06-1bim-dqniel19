@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package paquete01;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+/**
+ *
+ * @author UTPL
+ */
+public class Ejemplo06 {
+    
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        System.out.println("Ingrese la placa del vehiculo");
+        String placa = entrada.nextLine();
+
+        // L    0
+        // O    1
+        // J    2 
+        // A    3
+        // 
+        String inicial = placa.substring(0, 1); // se obtiene 
+        // el primer 
+        // caracter de la cadena
+        // Si el valor de ciudad es 
+        // "Loja" se obtiene "L"
+
+        if ( inicial.equals("G") || inicial.equals("g") || inicial.equals("P") 
+                || inicial.equals("p")) {
+            System.out.printf("%s\n", "acceso correcto");
+        } else {
+            System.out.printf("%s\n", "acceso incorrecto");
+    }
+    } 
+

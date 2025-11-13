@@ -23,13 +23,13 @@ public class Ejemplo01 {
         System.out.println("Ingrese el nombre del día de la semana");
         String cadena = entrada.nextLine();
         
-        switch(cadena){
-            case "Lunes":
+        switch(cadena){ // martes
+            case "Lunes": // f
                 System.out.printf("%s", cadena);
                 break;
             
-            case "Martes":
-            case "martes":
+            case "Martes": // f
+            case "martes": // v
                 System.out.printf("%s", cadena);
                 break;
             
